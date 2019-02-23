@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Words</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/addons/p5.dom.min.js"></script>
+    <script src="p5/addons/p5.sound.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAS5NMaH0l9vOVKXl3dUadGnYdEYRUurtg",
+        authDomain: "words-13312.firebaseapp.com",
+        databaseURL: "https://words-13312.firebaseio.com",
+        projectId: "words-13312",
+        storageBucket: "words-13312.appspot.com",
+        messagingSenderId: "497998793566"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="sketch.js"></script>
+    <script src="board.js"></script>
+    <script src="tile.js"></script>
+    <script src="rack.js"></script>
+    <script src="letters.js"></script>
+    <script src="wordList.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  </head>
+  <body>
+    <button id='reset'>Reset</button>
+    <button id='play'>Play</button>
+    <button id='skip'>Skip</button>
+  </body>
+</html>
